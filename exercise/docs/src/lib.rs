@@ -15,6 +15,18 @@
 // - Document the "roundness" field, explaining that it is a percentage
 // - Document the "orangeness" field, explaining that it is a number from 8 to 27
 
+//! Some inner shiz, yo (for libraries and modules)
+
+/// Something about a gd pumpkin.
+/// Maybe bananas will be next?
+///
+/// # History
+///
+/// Stuff went down here
+/// - This, too
+/// - `CODE`
+/// - [PUZZLE_PIECES]
+/// - [Click me](PUZZLE_PIECES)
 pub struct Pumpkin {
     pub roundness: f32,
     pub orangeness: i32,
@@ -24,12 +36,14 @@ pub struct Pumpkin {
 // can't be used for pie. :'-(
 
 impl Pumpkin {
+    /// Bruh, if you do this the pumpkin will be GONE. NO PIE FOR YOU
     pub fn smash(self) {}
 }
 
-// 5. Document that BURNT_ORANGE is for the "orangeness" field in the Pumpkin struct.
+// 5. Document that BURNT_ORANGE is for the `orangeness` field in the Pumpkin struct.
 // - Link to the Pumpkin struct in your description
 
+/// Control the "orangeness" of the [Pumpkin]
 pub const BURNT_ORANGE: i32 = 13;
 
 // Challenge: Find the option to pass to `cargo doc` so that documentation for this private item
